@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Elmwood Residence – Growstate</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="property.css">
+</head>
+<body class="property-page">
+
+<svg width="0" height="0" style="position:absolute"><defs>
+  <symbol id="logo" viewBox="0 0 69 47"><g fill="none" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"><path stroke="#c9a455" d="M3 45V27L13 17L23 27V45"/><path stroke="#c9a455" d="M32 45V6L44 2V45"/><path stroke="currentColor" d="M53 45V16H61C66 16 67 18 67 23V45"/></g></symbol>
+  <symbol id="caret" viewBox="0 0 10 6"><path d="M0 0h10L5 6z" fill="currentColor"/></symbol>
+</defs></svg>
+
+<header class="nav">
+  <div class="container nav-in">
+    <a href="index.html" class="logo"><svg class="logo-i" width="69" height="47"><use href="#logo"/></svg><span>Growstate</span></a>
+    <nav class="links" id="links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="property.html" aria-current="page" class="dd">Property <svg width="10" height="6"><use href="#caret"/></svg></a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="index.html#visit" class="btn btn-navy">Book a Visit</a>
+    <button class="burger" aria-label="Menu" onclick="document.getElementById('links').classList.toggle('open')"><i></i><i></i><i></i></button>
+  </div>
+</header>
+
+<main>
+  <section class="property-cover">
+    <div>
+      <h1>The Elmwood Residence</h1>
+      <p>1245 Maplewood Lane, Portland, Oregon, USA</p>
+    </div>
+  </section>
+
+  <section class="property-gallery">
+    <div class="property-gallery-inner">
+      <img class="property-main-image" src="images/elmwood.jpg" alt="The Elmwood Residence and landscaped front yard">
+      <div class="property-thumbnails">
+        <figure>
+          <img src="images/birchcrest.jpg" alt="Exterior courtyard and garden">
+          <figcaption>Modern exterior with spacious front yard</figcaption>
+        </figure>
+        <figure>
+          <img src="images/service-staging.jpg" alt="Open living room with natural light">
+          <figcaption>Open-concept living room with natural light</figcaption>
+        </figure>
+        <figure>
+          <img src="images/testimonial.jpg" alt="Modern kitchen and dining area">
+          <figcaption>Modern kitchen with premium appliances</figcaption>
+        </figure>
+        <figure>
+          <img src="images/willow.jpg" alt="Comfortable bedroom with a garden view">
+          <figcaption>Comfortable master bedroom suite</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="property-overview">
+    <div class="container property-overview-grid">
+      <div class="property-overview-copy">
+        <span class="eyebrow">A home designed for living</span>
+        <h2>A perfect blend of modern elegance and comfort</h2>
+        <p>Welcome to The Elmwood Residence, where timeless architecture meets the ease of modern living. Set in a peaceful Portland neighborhood, this thoughtfully designed home brings generous spaces, natural light, and refined details together.</p>
+        <ul class="property-highlights">
+          <li>Spacious open-plan living and dining area</li>
+          <li>Modern kitchen with island</li>
+          <li>Private backyard and patio</li>
+        </ul>
+      </div>
+      <aside class="property-details">
+        <h3>Property Details</h3>
+        <div><span>Price</span><strong>$1,250,000</strong></div>
+        <div><span>Bedrooms</span><strong>4</strong></div>
+        <div><span>Bathrooms</span><strong>3</strong></div>
+        <div><span>Living area</span><strong>3,200 sq ft</strong></div>
+        <div><span>Location</span><strong>1245 Maplewood Lane,<br>Portland, Oregon, USA</strong></div>
+        <a href="index.html#visit" class="btn btn-gold">Book a Visit</a>
+      </aside>
+    </div>
+  </section>
+
+  <section class="property-facilities">
+    <div class="container property-facilities-grid">
+      <div class="property-facilities-intro">
+        <span class="eyebrow">Main Facilities</span>
+        <h2>Designed for a better way of living</h2>
+        <p>Enjoy a range of modern amenities and thoughtful features that make everyday living more comfortable, convenient, and enjoyable.</p>
+      </div>
+      <div class="property-facilities-list">
+        <article class="facility-card">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20V8l9-5 9 5v12M8 20v-7h8v7M2 9l10-6 10 6M6 10h.01M18 10h.01"/></svg>
+          <h3>Spacious Living Area</h3>
+          <p>Bright and open spaces for your family to relax and spend time together.</p>
+        </article>
+        <article class="facility-card dark">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20c9 0 14-6 15-16C9 4 4 9 4 20Zm0 0c2-5 6-9 12-12"/></svg>
+          <h3>Modern Kitchen</h3>
+          <p>Equipped with high-end appliances and a large kitchen island.</p>
+        </article>
+        <article class="facility-card">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21v-9a9 9 0 0 1 18 0v9M2 21h20M7 12h.01M17 12h.01M12 5V3"/></svg>
+          <h3>Private Outdoor Space</h3>
+          <p>A beautiful backyard and patio for outdoor activities and gatherings.</p>
+        </article>
+        <article class="facility-card dark">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11 12 3l9 8M5 10v11h14V10M9 21v-7h6v7"/></svg>
+          <h3>Smart Home Features</h3>
+          <p>Energy-efficient systems and modern smart home technology.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="why">
+    <div class="container why-grid">
+      <div><h2>Why Choose Us</h2><p>We only work the neighborhoods we know well, so every recommendation is grounded in real comparisons — not a database pulled from across the state.</p></div>
+      <div class="nums">
+        <div><b>10+</b><span>In The Market</span></div>
+        <div><b>1,200+</b><span>Home Sold</span></div>
+        <div><b>35</b><span>Agent Nationwide</span></div>
+        <div><b>98%</b><span>Client Satisfaction</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="property-faq">
+    <div class="container property-faq-grid">
+      <div class="property-faq-media">
+        <h2>Frequently Asked Questions</h2>
+        <img src="images/willow.jpg" alt="Dining area with a view of the surrounding garden">
+      </div>
+      <div class="property-faq-list">
+        <details>
+          <summary>What makes The Elmwood Residence a unique home?</summary>
+          <p>Its considered architecture, bright open spaces, and private outdoor setting bring comfort and modern living together.</p>
+        </details>
+        <details>
+          <summary>Are mortgage financing options available for international or first-time buyers?</summary>
+          <p>Our team can connect you with local lending professionals to discuss financing options for your situation.</p>
+        </details>
+        <details>
+          <summary>What are the monthly HOA or property maintenance fees?</summary>
+          <p>Please contact our agent for current property and neighborhood fee information.</p>
+        </details>
+        <details>
+          <summary>Can I customize the interior layout or smart home features before moving in?</summary>
+          <p>Contact our agent to discuss the available options and details for this property.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="contact">
+  <div class="container">
+    <div class="cta reveal"><span class="eyebrow">[Let's find your home]</span><h2>Connect With an Agent Who Listens</h2><a href="index.html#visit" class="btn btn-gold">Book a Visit</a></div>
+    <div class="f-grid">
+      <div><a href="index.html" class="logo gold"><svg class="logo-i" width="69" height="47"><use href="#logo"/></svg><span>Growstate</span></a>
+        <p>We craft home searches that support real life with agents who know every block.</p>
+        <div class="soc">
+          <a href="#" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12a12 12 0 1 0-13.9 11.9v-8.4H7.1V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v3h-1.5c-1.5 0-2 .9-2 1.9V12h3.4l-.5 3.5h-2.9v8.4A12 12 0 0 0 24 12z"/></svg></a>
+          <a href="#" aria-label="X"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 1.2h3.7l-8 9.2L24 22.8h-7.4l-5.8-7.6-6.6 7.6H.5l8.6-9.8L0 1.2h7.6l5.2 6.9 6.1-6.9zm-1.3 19.4h2L6.5 3.3H4.3l13.3 17.3z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+        </div>
+      </div>
+      <div><h5>Navigate</h5><a href="index.html#listings">Listings</a><a href="index.html#services">Services</a><a href="about.html">About Us</a><a href="index.html#contact">Agents</a></div>
+      <div><h5>Contact</h5><a href="mailto:ex@domain.com">ex@domain.com</a><a href="tel:+0123456789">+0 123 456 78 9</a><span>Melbourne Storewest, 233 Apartment 11, AUS</span><span>08:30 am – 05:30 pm</span></div>
+      <div><h5>Stay Update</h5><p>New listings and market notes, once a week.</p>
+        <form onsubmit="return false"><label>Email<input type="email" placeholder="Email"></label><button class="btn btn-gold">Send</button></form></div>
+    </div>
+    <div class="copy">Copyright © All Right Reserved</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
