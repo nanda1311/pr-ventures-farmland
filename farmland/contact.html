@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us – Growstate</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body class="contact-page">
+
+<svg width="0" height="0" style="position:absolute"><defs>
+  <symbol id="logo" viewBox="0 0 69 47"><g fill="none" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"><path stroke="#c9a455" d="M3 45V27L13 17L23 27V45"/><path stroke="#c9a455" d="M32 45V6L44 2V45"/><path stroke="currentColor" d="M53 45V16H61C66 16 67 18 67 23V45"/></g></symbol>
+  <symbol id="caret" viewBox="0 0 10 6"><path d="M0 0h10L5 6z" fill="currentColor"/></symbol>
+</defs></svg>
+
+<header class="nav">
+  <div class="container nav-in">
+    <a href="index.html" class="logo"><svg class="logo-i" width="69" height="47"><use href="#logo"/></svg><span>Growstate</span></a>
+    <nav class="links" id="links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="property.html" class="dd">Property</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+    <a href="index.html#visit" class="btn btn-navy">Book a Visit</a>
+    <button class="burger" aria-label="Menu" onclick="document.getElementById('links').classList.toggle('open')"><i></i><i></i><i></i></button>
+  </div>
+</header>
+
+<main>
+  <section class="contact-cover">
+    <h1>Contact Us</h1>
+  </section>
+
+  <section class="contact-section">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <h2>Get in Touch</h2>
+        <p class="contact-intro">Choose whichever way feels easiest. Every message is read by an agent, and we'll point you to the right person on the team.</p>
+        <div class="contact-method">
+          <span>EMAIL</span>
+          <a href="mailto:ex@domain.com">ex@domain.com</a>
+          <p>For listings, offers, and general questions</p>
+        </div>
+        <div class="contact-method">
+          <span>PHONE</span>
+          <a href="tel:+0123456789">+0 123 456 78 9</a>
+          <p>Mon – Sat, 08:30 am – 05:30 pm</p>
+        </div>
+        <div class="contact-method">
+          <span>OFFICE</span>
+          <strong>Storewest, 233 Apartment 11</strong>
+          <p>Melbourne, AUS</p>
+        </div>
+      </div>
+
+      <form class="contact-form" onsubmit="return false">
+        <h3>Send us a message</h3>
+        <p class="contact-form-note">Fields marked with * are required.</p>
+        <div class="contact-fields">
+          <label>FULL NAME *<input type="text" name="name" placeholder="John Doe" required></label>
+          <label>EMAIL *<input type="email" name="email" placeholder="Your Email" required></label>
+          <label>PHONE<input type="tel" name="phone" placeholder="Your Phone"></label>
+          <label>PREFERRED CONTACT
+            <span class="contact-select"><select name="preferred-contact"><option>Email</option><option>Phone</option><option>Either</option></select><svg width="10" height="6"><use href="#caret"/></svg></span>
+          </label>
+          <label class="contact-message">MESSAGE *<textarea name="message" placeholder="Your Message" required></textarea></label>
+        </div>
+        <button class="btn btn-gold" type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="contact-location">
+    <div class="container contact-location-grid">
+      <div class="contact-map" role="img" aria-label="Map showing the Growstate Melbourne office">
+        <svg class="map-art" viewBox="0 0 720 360" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <rect width="720" height="360" fill="#e9eef2"/>
+          <path d="M-20 78 130 40 242 86 354 32 466 70 590 28 750 72M-30 155 108 118 226 159 354 120 474 153 614 110 750 146M-25 241 100 204 222 247 354 203 490 245 612 201 750 235M42-20 80 78 58 154 104 239 78 380M168-20 205 70 180 158 224 242 199 380M315-20 342 62 320 145 366 226 338 380M464-20 495 67 466 151 512 236 484 380M600-20 630 68 600 154 646 238 620 380" fill="none" stroke="#fff" stroke-width="12"/>
+          <path d="M-20 78 130 40 242 86 354 32 466 70 590 28 750 72M-30 155 108 118 226 159 354 120 474 153 614 110 750 146M-25 241 100 204 222 247 354 203 490 245 612 201 750 235" fill="none" stroke="#c9d5de" stroke-width="2"/>
+          <path d="M-10 300 120 265 250 300 378 260 500 288 730 250" fill="none" stroke="#e6c46c" stroke-width="6"/>
+          <path d="M520 0 553 42 540 90 584 130 563 180 600 232 580 300 620 360" fill="none" stroke="#a9d8e6" stroke-width="26"/>
+          <g fill="#c8d8c6"><path d="M86 89h54v32H86zM272 175h46v25h-46zM390 82h42v25h-42zM90 263h42v30H90zM445 281h60v24h-60z"/></g>
+        </svg>
+        <div class="map-pin" aria-hidden="true"><span></span></div>
+        <div class="map-card">
+          <b>Growstate Melbourne</b>
+          <span>Storewest, 233 Apartment 11</span>
+          <span>Melbourne, Australia</span>
+          <a href="https://maps.google.com/?q=Melbourne%2C+Australia" target="_blank" rel="noreferrer">Open in Maps <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <div class="contact-hours">
+        <div><span>Monday – Friday</span><b>08:30 – 17:00</b></div>
+        <div><span>Saturday</span><b>09:30 – 15:30</b></div>
+        <div><span>Sunday</span><b>By appointment</b></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-faq">
+    <div class="container contact-faq-grid">
+      <div class="contact-faq-media">
+        <h2>Frequently Asked Questions</h2>
+        <img src="images/willow.jpg" alt="Dining area with a view of the surrounding garden">
+      </div>
+      <div class="contact-faq-list">
+        <details>
+          <summary>How can I arrange a viewing for a property?</summary>
+          <p>Use the booking form or contact our team by phone or email and we will help arrange a time.</p>
+        </details>
+        <details>
+          <summary>Are mortgage financing options available for first-time buyers?</summary>
+          <p>We can connect you with local lending professionals to discuss financing options for your situation.</p>
+        </details>
+        <details>
+          <summary>What areas does Growstate serve?</summary>
+          <p>Contact our team and we will help you find the right local agent for your preferred area.</p>
+        </details>
+        <details>
+          <summary>When can I speak with an agent?</summary>
+          <p>Our office is open Monday to Saturday, with Sunday appointments available on request.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="contact-footer">
+  <div class="container">
+    <div class="cta reveal"><span class="eyebrow">[Let's find your home]</span><h2>Connect With an Agent Who Listens</h2><a href="index.html#visit" class="btn btn-gold">Book a Visit</a></div>
+    <div class="f-grid">
+      <div><a href="index.html" class="logo gold"><svg class="logo-i" width="69" height="47"><use href="#logo"/></svg><span>Growstate</span></a>
+        <p>We craft home searches that support real life with agents who know every block.</p>
+        <div class="soc">
+          <a href="#" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12a12 12 0 1 0-13.9 11.9v-8.4H7.1V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v3h-1.5c-1.5 0-2 .9-2 1.9V12h3.4l-.5 3.5h-2.9v8.4A12 12 0 0 0 24 12z"/></svg></a>
+          <a href="#" aria-label="X"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 1.2h3.7l-8 9.2L24 22.8h-7.4l-5.8-7.6-6.6 7.6H.5l8.6-9.8L0 1.2h7.6l5.2 6.9 6.1-6.9zm-1.3 19.4h2L6.5 3.3H4.3l13.3 17.3z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
+        </div>
+      </div>
+      <div><h5>Navigate</h5><a href="index.html#listings">Listings</a><a href="index.html#services">Services</a><a href="about.html">About Us</a><a href="index.html#contact">Agents</a></div>
+      <div><h5>Contact</h5><a href="mailto:ex@domain.com">ex@domain.com</a><a href="tel:+0123456789">+0 123 456 78 9</a><span>Melbourne Storewest, 233 Apartment 11, AUS</span><span>08:30 am – 05:30 pm</span></div>
+      <div><h5>Stay Update</h5><p>New listings and market notes, once a week.</p>
+        <form onsubmit="return false"><label>Email<input type="email" placeholder="Email"></label><button class="btn btn-gold">Send</button></form></div>
+    </div>
+    <div class="copy">Copyright © All Right Reserved</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
