@@ -3,7 +3,7 @@
   display:grid;
   place-items:center;
   color:#fff;
-  background:linear-gradient(rgba(10,25,48,.58),rgba(10,25,48,.58)),url("images/elmwood.jpg") center 52%/cover;
+  background:linear-gradient(rgba(10,25,48,.58),rgba(10,25,48,.58)),url("images/elmwood.png") center 52%/cover;
 }
 .contact-cover h1{font-size:var(--page-title);line-height:1.15}
 .contact-section{padding:72px 0 76px}

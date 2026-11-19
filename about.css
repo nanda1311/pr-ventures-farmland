@@ -1,10 +1,10 @@
 .about-cover{
-  min-height:188px;
+  min-height:360px;
   display:grid;
   place-items:center;
   position:relative;
   color:#fff;
-  background:linear-gradient(rgba(10,25,48,.58),rgba(10,25,48,.58)),url("images/elmwood.jpg") center 48%/cover;
+  background:linear-gradient(rgba(10,25,48,.58),rgba(10,25,48,.58)),url("images/elmwood.png") center 48%/cover;
 }
 .about-cover h1{font-size:var(--page-title);line-height:1.15}
 .about-story{padding:72px 0 74px}

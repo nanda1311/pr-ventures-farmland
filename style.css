@@ -96,7 +96,7 @@ h2{font-size:var(--h2);line-height:1.15}
 .svc h4{
     position: absolute;
     z-index: 2;
-    left: 36px;
+    left: 36px; 
     bottom: 36px;
     font-size: 20px;
     line-height: 1.15;
@@ -109,10 +109,14 @@ h2{font-size:var(--h2);line-height:1.15}
 .svc-info p{color:var(--slate);font-size:var(--text-base);line-height:1.6;max-width:380px}
 
 /* process */
-.process{background:linear-gradient(rgba(10,25,48,.76),rgba(10,25,48,.76)),url("images/background-img-1.jpg") center/cover no-repeat;color:#fff;padding:130px 0 127px}
+.process{background:linear-gradient(rgba(10,25,48,.76),rgba(10,25,48,.76)),url("images/background-img-1.jpg") center/cover no-repeat;color:#fff;padding:80px 0 80px}
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;margin-top:57px;align-items:start}
-.step{border:1px solid rgba(255,255,255,.13);border-radius:var(--radius-card);padding:29px 28px 38px;min-height:270px;transition:border-color .4s,background .4s}
-.step:hover{border-color:var(--gold);background:rgba(255,255,255,.03)}
+.step{border:1px solid #fff ;border-radius:var(--radius-card);padding:29px 28px 38px;min-height:270px;transition:border-color .4s,background .4s}
+.step:hover{border-color:var(--gold);background-color:rgba(255,255,255,.03)}
+.step-consultation{background:linear-gradient(rgba(0, 0, 0, 0.56),rgba(0, 0, 0, 0.88)),url("images/process-consultation.jpg") center/cover no-repeat}
+.step-match{background:linear-gradient(rgba(0, 0, 0, 0.56),rgba(0, 0, 0, 0.88)),url("images/process-match.jpg") center/cover no-repeat}
+.step-visits{background:linear-gradient(rgba(0, 0, 0, 0.56),rgba(0, 0, 0, 0.88)),url("images/process-visits.jpg") center/cover no-repeat}
+.step-close{background:linear-gradient(rgba(0, 0, 0, 0.56),rgba(0, 0, 0, 0.88)),url("images/process-close.jpg") center/cover no-repeat}
 .step:nth-child(even){margin-top:62px}
 .step b{display:block;font-size:56px;color:#d9b868;line-height:1;margin-bottom:34px}
 .step h4{font-size:var(--text-lg);margin-bottom:17px;line-height:1.25}
@@ -179,7 +183,7 @@ cite{font:500 20px/1.35 var(--serif);font-style:normal}
 .faq-grid{grid-template-columns:1fr;gap:28px}
 .faq-item summary{font-size:var(--text-base)}}
 /* footer */
-footer{background:var(--navy);color:#fff;padding:46px 0 0}
+footer{background:linear-gradient(rgba(10,25,48,.82),rgba(10,25,48,.82)),url("images/background-img-3.png") center/cover no-repeat;color:#fff;padding:46px 0 0}
 .cta{text-align:center;padding-bottom:62px;border-bottom:1px solid rgba(255,255,255,.13)}
 .cta h2{margin:24px 0 22px;font-size:var(--h2)}
 .cta .btn{height:42px;padding:0 24px;font-size:var(--text-sm)}

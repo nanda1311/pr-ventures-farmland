@@ -102,4 +102,82 @@
       if (button) button.setAttribute('aria-expanded', 'false');
     });
   });
+
+  var facilityList = document.querySelector('.property-facilities-list');
+  var facilityImage = document.querySelector('.property-facility-image');
+  if (facilityList && facilityImage) {
+    var facilityCards = Array.prototype.slice.call(facilityList.querySelectorAll('.facility-card'));
+    var activeFacilityIndex = 0;
+    var facilityTimer = null;
+    var facilityImageRequest = 0;
+
+    function activateFacility(index) {
+      activeFacilityIndex = index;
+      var activeCard = facilityCards[index];
+      var requestId = ++facilityImageRequest;
+
+      facilityCards.forEach(function (card, cardIndex) {
+        var isActive = cardIndex === index;
+        card.classList.toggle('active', isActive);
+        card.setAttribute('aria-pressed', String(isActive));
+      });
+
+      var imagePath = activeCard.dataset.image;
+      var imageAlt = activeCard.dataset.imageAlt;
+      if (facilityImage.getAttribute('src') === imagePath) {
+        facilityImage.alt = imageAlt;
+        facilityImage.classList.remove('is-changing');
+        return;
+      }
+
+      facilityImage.classList.add('is-changing');
+      var nextImage = new Image();
+      nextImage.onload = function () {
+        if (requestId !== facilityImageRequest) return;
+        facilityImage.src = imagePath;
+        facilityImage.alt = imageAlt;
+        facilityImage.classList.remove('is-changing');
+      };
+      nextImage.onerror = function () {
+        if (requestId !== facilityImageRequest) return;
+        facilityImage.classList.remove('is-changing');
+        console.error('Unable to load facility image: ' + imagePath);
+      };
+      nextImage.src = imagePath;
+    }
+
+    function stopFacilityRotation() {
+      if (facilityTimer === null) return;
+      window.clearInterval(facilityTimer);
+      facilityTimer = null;
+    }
+
+    function startFacilityRotation() {
+      if (reduceMotion || facilityTimer !== null || facilityCards.length < 2) return;
+      facilityTimer = window.setInterval(function () {
+        activateFacility((activeFacilityIndex + 1) % facilityCards.length);
+      }, 3000);
+    }
+
+    facilityCards.forEach(function (card, index) {
+      card.addEventListener('click', function () {
+        activateFacility(index);
+        stopFacilityRotation();
+        startFacilityRotation();
+      });
+    });
+
+    facilityList.addEventListener('mouseenter', stopFacilityRotation);
+    facilityList.addEventListener('mouseleave', startFacilityRotation);
+    facilityList.addEventListener('focusin', stopFacilityRotation);
+    facilityList.addEventListener('focusout', function (event) {
+      if (!facilityList.contains(event.relatedTarget)) startFacilityRotation();
+    });
+
+    var initialFacilityIndex = facilityCards.findIndex(function (card) {
+      return card.classList.contains('active');
+    });
+    activateFacility(initialFacilityIndex >= 0 ? initialFacilityIndex : 0);
+    startFacilityRotation();
+  }
 })();

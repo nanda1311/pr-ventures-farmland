@@ -38,7 +38,7 @@
 
   <section class="property-gallery">
     <div class="property-gallery-inner">
-      <img class="property-main-image" src="images/elmwood.jpg" alt="The Elmwood Residence and landscaped front yard">
+      <img class="property-main-image" src="images/elmwood.png" alt="The Elmwood Residence and landscaped front yard">
       <div class="property-thumbnails">
         <figure>
           <img src="images/birchcrest.jpg" alt="Exterior courtyard and garden">
@@ -90,28 +90,29 @@
         <span class="eyebrow">Main Facilities</span>
         <h2>Designed for a better way of living</h2>
         <p>Enjoy a range of modern amenities and thoughtful features that make everyday living more comfortable, convenient, and enjoyable.</p>
+        <img class="property-facility-image" src="images/process-visits.jpg" alt="Bright, open living area with comfortable seating">
       </div>
-      <div class="property-facilities-list">
-        <article class="facility-card">
+      <div class="property-facilities-list" role="group" aria-label="Property facilities">
+        <button class="facility-card active" type="button" aria-pressed="true" data-image="images/process-visits.jpg" data-image-alt="Bright, open living area with comfortable seating">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20V8l9-5 9 5v12M8 20v-7h8v7M2 9l10-6 10 6M6 10h.01M18 10h.01"/></svg>
           <h3>Spacious Living Area</h3>
           <p>Bright and open spaces for your family to relax and spend time together.</p>
-        </article>
-        <article class="facility-card dark">
+        </button>
+        <button class="facility-card" type="button" aria-pressed="false" data-image="images/facility-kitchen.jpg" data-image-alt="Modern open-plan kitchen with a dining area">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20c9 0 14-6 15-16C9 4 4 9 4 20Zm0 0c2-5 6-9 12-12"/></svg>
           <h3>Modern Kitchen</h3>
           <p>Equipped with high-end appliances and a large kitchen island.</p>
-        </article>
-        <article class="facility-card">
+        </button>
+        <button class="facility-card" type="button" aria-pressed="false" data-image="images/facility-outdoor.jpg" data-image-alt="Modern home opening onto a private garden and patio">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21v-9a9 9 0 0 1 18 0v9M2 21h20M7 12h.01M17 12h.01M12 5V3"/></svg>
           <h3>Private Outdoor Space</h3>
           <p>A beautiful backyard and patio for outdoor activities and gatherings.</p>
-        </article>
-        <article class="facility-card dark">
+        </button>
+        <button class="facility-card" type="button" aria-pressed="false" data-image="images/facility-smart-home.jpg" data-image-alt="Smart door lock controlled from a phone">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11 12 3l9 8M5 10v11h14V10M9 21v-7h6v7"/></svg>
           <h3>Smart Home Features</h3>
           <p>Energy-efficient systems and modern smart home technology.</p>
-        </article>
+        </button>
       </div>
     </div>
   </section>
